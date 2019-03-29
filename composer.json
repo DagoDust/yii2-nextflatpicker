@@ -1,0 +1,22 @@
+{
+    "name": "francescodagostino/yii2-nextflatpicker",
+    "description": "Flatpicker V4 for Yii2",
+    "keywords": ["yii2", "extension", "datetime picker", "flatpickr"],
+    "type": "yii2-extension",
+    "require": {
+        "yiisoft/yii2": "*",
+        "bower-asset/flatpickr": "^4.0"
+    },
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Francesco D'Agostino",
+            "email": "baduizm@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/DagoDust/yii2-nextflatpicker/issues?state=open",
+        "source": "https://github.com/DagoDust/yii2-nextflatpicker"
+    },
+    "minimum-stability": "dev"
+}
