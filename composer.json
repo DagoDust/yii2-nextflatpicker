@@ -1,19 +1,12 @@
 {
-<<<<<<< HEAD
     "name": "francescodagostino/yii2-nextflatpicker",
     "description": "Flatpicker V4 for Yii2",
     "keywords": ["yii2", "extension", "datetime picker", "flatpickr"],
     "type": "yii2-extension",
     "require": {
         "yiisoft/yii2": "*",
-        "bower-asset/flatpickr": "^4.0"
+        "npm-asset/flatpickr": "^4.0"
     },
-=======
-    "name": "farm/yii2-nextflatpicker",
-    "description": "Flatpicke implementation on Yii2",
-    "type": "yii2-extension",
-    "keywords": ["yii2","extension","flatpicker "],
->>>>>>> 25211224ffb4e403ab633e20eb790e5ba56df498
     "license": "BSD-3-Clause",
     "authors": [
         {
@@ -21,13 +14,11 @@
             "email": "baduizm@gmail.com"
         }
     ],
-<<<<<<< HEAD
     "support": {
         "issues": "https://github.com/DagoDust/yii2-nextflatpicker/issues?state=open",
         "source": "https://github.com/DagoDust/yii2-nextflatpicker"
     },
     "minimum-stability": "dev"
-=======
     "require": {
         "yiisoft/yii2": "~2.0.0"
     },
@@ -36,5 +27,4 @@
             "farm\\nfp\\": ""
         }
     }
->>>>>>> 25211224ffb4e403ab633e20eb790e5ba56df498
 }
