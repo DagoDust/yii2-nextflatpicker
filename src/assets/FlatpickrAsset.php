@@ -1,6 +1,6 @@
 <?php
 
-namespace bs\Flatpickr\assets;
+namespace farm\Flatpickr\assets;
 
 use Yii;
 use yii\helpers\ArrayHelper;
