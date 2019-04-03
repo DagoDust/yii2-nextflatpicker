@@ -2,13 +2,12 @@
 
 namespace farm\Flatpickr;
 
-use Yii;
+use farm\Flatpickr\assets\FlatpickrAsset;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\web\JsExpression;
 use yii\widgets\InputWidget;
-use farm\Flatpicker\assets\FlatpickrAsset;
 
 class FlatpickrWidget extends InputWidget
 {
@@ -34,7 +33,7 @@ class FlatpickrWidget extends InputWidget
      * @var string
      */
     public $theme;
-    
+
     /**
      * Disable input
      *
@@ -63,12 +62,12 @@ class FlatpickrWidget extends InputWidget
      */
     public $groupBtn = [
         'toggle' => [
-            'btnClass' => 'btn btn-default',
-            'iconClass' => 'glyphicon glyphicon-calendar',
+            'btnClass' => 'input-group-text button-leaf',
+            'iconClass' => 'icon-calendar2',
         ],
         'clear' => [
-            'btnClass' => 'btn btn-default',
-            'iconClass' => 'glyphicon glyphicon-remove',
+            'btnClass' => 'input-group-text',
+            'iconClass' => 'icon-remove',
         ],
     ];
 
@@ -99,7 +98,7 @@ class FlatpickrWidget extends InputWidget
                 $content .= Html::textInput($this->name, $this->value, ArrayHelper::merge($this->options, $options));
             }
 
-            $content .= '<div class="input-group-btn">';
+            $content .= '<div class="input-group-append">';
             if (preg_match_all('/{(toggle|clear)}/i', $this->groupBtnTemplate, $matches)) {
                 foreach ($matches[1] as $btnName) {
                     $content .= $this->renderGroupBtn($btnName);
@@ -189,9 +188,7 @@ class FlatpickrWidget extends InputWidget
             }
 
             $content = <<<HTML
-                <button class="$btnClass" type="button" $disabled data-$btnName>
-                    <span class="$iconClass"></span>
-                </button>
+                <a href="javascript:;" class="$btnClass" $disabled data-$btnName><i class="$iconClass"></i></a>
 HTML;
         }
 
