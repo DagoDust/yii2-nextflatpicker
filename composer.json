@@ -3,10 +3,6 @@
     "description": "Flatpicker V4 for Yii2",
     "keywords": ["yii2", "extension", "datetime picker", "flatpickr"],
     "type": "yii2-extension",
-    "require": {
-        "yiisoft/yii2": "*",
-        "bower-asset/flatpickr": "^4.5"
-    },
     "license": "BSD-3-Clause",
     "authors": [
         {
@@ -20,7 +16,8 @@
     },
     "minimum-stability": "dev",
     "require": {
-        "yiisoft/yii2": "~2.0.0"
+        "yiisoft/yii2": "~2.0.0",
+        "npm-asset/flatpickr": "^4.5"
     },
     "autoload": {
         "psr-4": {
