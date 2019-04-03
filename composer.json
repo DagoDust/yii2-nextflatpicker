@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "farm\\Flatpicker\\": "src"
+            "farm\\Flatpickr\\": "src"
         }
     }
 }
